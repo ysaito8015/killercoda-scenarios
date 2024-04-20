@@ -1,0 +1,12 @@
+{
+  "title": "learning-of-numerical-calculation-by-practice",
+  "description": "",
+  "icon": "fa-killercoda",
+  "courses": [
+    {
+      "course_id": "leaning-of-numerical-calculation-01",
+      "title": "演習で学ぶ数値計算01",
+      "description": "数値計算の基本的な手法を学びます。"
+    }
+  ]
+}
