@@ -22,26 +22,11 @@ killercoda 環境: `ubuntu`
 
 ```c
 #include <stdio.h>
-
-int main() {
-	float feps;
-	feps = 1.0f;
-	while ( feps + 1.0f > 1.0f ) {
-		feps = feps * 0.5f;
-	}
-
-	printf("float machine epsilon hat = %e\n", feps);
-	return 0;
-}
-``` {{copy}}
-
-```c
-#include <stdio.h>
 #include <math.h>
 
 double machine_epsilon() {
 	double eps;
-	feps = 1.0f;
+	eps = 1.0f;
 	while ( eps + 1.0f > 1.0f ) {
 		eps = eps * 0.5f;
 	}
@@ -81,5 +66,5 @@ int main() {
   return 0;
 }
 
-``` {{copy}}
+```{{copy}}
 
