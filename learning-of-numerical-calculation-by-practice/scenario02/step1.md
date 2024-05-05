@@ -11,7 +11,7 @@ killercoda 環境: `ubuntu`
 画面右にあるターミナルで, vim, tig, gfortran, gcc のインストール準備が進行しています.
 
 
-## マシンイプシロンの設定
+## ２分法の実行
 
 作業ディレクトリに移動し
 
@@ -68,3 +68,7 @@ int main() {
 
 ```{{copy}}
 
+
+```
+gcc -Wall -o program ./binary.c -lm
+```{{execute}}

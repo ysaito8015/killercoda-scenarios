@@ -1,4 +1,4 @@
-## 目標
+## Newton 法の実行
 
 ```
 #include <stdio.h>
@@ -31,3 +31,7 @@ int main() {
   return 0;
 }
 ```{{copy}}
+
+```
+gcc -Wall -o program ./binary.c -lm
+```{{execute}}
