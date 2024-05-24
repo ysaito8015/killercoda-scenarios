@@ -1,0 +1,8 @@
+{
+	"title": "書籍 Machine Learning in Elixir に基づいたハンズオン",
+	"description": "This is the description",
+	"items" : [
+		{ "path" : "scenario01" },
+		{ "path" : "scenario02" }
+	]
+}
