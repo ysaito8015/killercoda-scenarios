@@ -15,7 +15,7 @@ cd /root/work/ && git clone https://github.com/ysaito8015/machine-learning-in-el
 ### Livebook の起動
 
 ```
-docker run -p 8080:8080 -p 8081:8081 --pull always ghcr.io/livebook-dev/livebook
+docker run -p 8080:8080 -p 8081:8081 -v /root/work:/work --pull always ghcr.io/livebook-dev/livebook
 ```{{execute}}
 
 
