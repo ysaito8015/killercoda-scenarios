@@ -9,7 +9,7 @@
 
 ```
 cd /root/work/ && git clone https://github.com/ysaito8015/machine-learning-in-elixir-mokumoku.git
-```
+```{{execute}}
 
 
 ### Livebook の起動
