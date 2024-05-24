@@ -22,7 +22,7 @@ mise --version
 Erlang をインストールします。
 
 ```
-mise install erlang@latest
+mise install erlang@26.2.5
 ```{{execute}}
 
 ### Elixir のインストール
