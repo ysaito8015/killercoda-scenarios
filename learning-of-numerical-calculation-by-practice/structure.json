@@ -2,6 +2,7 @@
 	"title": "C&Fortran 演習で学ぶ数値計算に基づいたハンズオン",
 	"description": "This is the description",
 	"items" : [
-		{ "path" : "scenario01" }
+		{ "path" : "scenario01" },
+		{ "path" : "scenario02" }
 	]
 }
