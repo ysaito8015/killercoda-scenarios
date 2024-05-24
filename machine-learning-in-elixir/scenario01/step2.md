@@ -1,10 +1,16 @@
 ## 目標: LiveBook の起動
 ### 準備概要
-1. Erlang のインストール
-2. Elixir のインストール
-3. git の設定
-4. livebook の起動
+- livebook の起動 (docker)
 
+
+### Livebook の起動
+
+```
+docker run -p 8080:8080 -p 8081:8081 --pull always ghcr.io/livebook-dev/livebook
+```{{execute}}
+
+
+### オプション
 ### Erlang のインストール
 
 mise がインストールされていることを確認します。
