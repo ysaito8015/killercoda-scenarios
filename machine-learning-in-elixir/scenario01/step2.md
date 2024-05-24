@@ -1,6 +1,15 @@
 ## 目標: LiveBook の起動
 ### 準備概要
+- git clone
 - livebook の起動 (docker)
+
+
+
+### git clone
+
+```
+cd /root/work/ && git clone https://github.com/ysaito8015/machine-learning-in-elixir-mokumoku.git
+```
 
 
 ### Livebook の起動
