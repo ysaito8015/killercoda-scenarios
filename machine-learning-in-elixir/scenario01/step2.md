@@ -32,13 +32,7 @@ Elixir をインストールします。
 mise install elixir@latest
 ```{{execute}}
 
-### git の設定
-
-```
-git config --global user.name #{{your name}}
-git config --global user.email #{{your name}}
-```{{copy}}
-
+### git clone
 
 ```
 cd /root/work
