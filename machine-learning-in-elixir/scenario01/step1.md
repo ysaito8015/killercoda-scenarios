@@ -6,9 +6,9 @@ killercoda 環境: `ubuntu`
 
 `pwd; whoami; cat /etc/lsb-release`{{execute}}
 
-コード片にマウスカーソルをホバーすると現れる、
+コード片にマウスカーソルをホバーすると、
 <img src='https://i.gyazo.com/0c854698c814d872a3e2eebf1fbcdc4e.png' with="80px">
-をクリックすると右のターミナルでコマンドが実行されます
+が現れます。その状態でクリックすると右のターミナルでコマンドが実行されます
 
 画面右にあるターミナルで, vim, tig, mise のインストール準備が進行しています.
 
@@ -19,5 +19,5 @@ killercoda 環境: `ubuntu`
 
 作業ディレクトリに移動します。
 
-`mkdir /root/work && cd /root/work`{{execute}}
+`cd /root/work`{{execute}}
 
