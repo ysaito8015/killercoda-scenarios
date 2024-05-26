@@ -3,6 +3,7 @@
 	"description": "This is the description",
 	"items" : [
 		{ "path" : "scenario01" },
-		{ "path" : "scenario02" }
+		{ "path" : "scenario02" },
+		{ "path" : "scenario03" }
 	]
 }

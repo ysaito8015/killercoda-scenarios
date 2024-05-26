@@ -6,11 +6,11 @@ killercoda 環境: `ubuntu`
 
 `pwd; whoami; cat /etc/lsb-release`{{execute}}
 
-コード片にマウスカーソルをホバーすると現れる、
+コード片にマウスカーソルをホバーすると、
 <img src='https://i.gyazo.com/0c854698c814d872a3e2eebf1fbcdc4e.png' with="80px">
-をクリックすると右のターミナルでコマンドが実行されます
+が現れます。その状態でクリックすると右のターミナルでコマンドが実行されます
 
-画面右にあるターミナルで, vim, tig, gfortran, gcc のインストール準備が進行しています.
+画面右にあるターミナルで, vim, tig, mise のインストール準備が進行しています.
 
 ターミナルの上にある、"Editor" タブ
 <img src='https://i.gyazo.com/c2417c969fdcad5c05425b65495e1a92.png' with="80px">
