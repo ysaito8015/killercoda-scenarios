@@ -1,6 +1,6 @@
 {
-  "title": "演習で学ぶ数値計算02",
-  "description": "方程式の根",
+  "title": "演習で学ぶ数値計算03",
+  "description": "曲線の推定",
   "difficulty": "Beginner",
   "time": "30",
   "details": {
@@ -12,6 +12,14 @@
       {
         "title": "Step 2",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
       }
     ],
     "intro": {

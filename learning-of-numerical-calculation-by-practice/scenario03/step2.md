@@ -1,4 +1,4 @@
-## Lagrange 補完
+## Lagrange 補間
 
 ```
 #include <stdio.h>
