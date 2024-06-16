@@ -4,6 +4,11 @@
   "difficulty": "Beginner",
   "time": "30",
   "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh",
+      "background": "background.sh"
+    },
     "steps": [
       {
         "title": "Step 1",
@@ -22,10 +27,6 @@
         "text": "step4.md"
       }
     ],
-    "intro": {
-      "text": "intro.md",
-      "code": "setup.sh"
-    },
     "finish": {
       "text": "finish.md"
     }
