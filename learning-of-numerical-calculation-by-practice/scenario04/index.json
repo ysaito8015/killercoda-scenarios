@@ -1,0 +1,44 @@
+{
+  "title": "Chapter 04: Numerical Integration",
+  "description": "This chapter covers the basics of numerical integration, including the trapezoidal rule and Simpson's rule. It provides a hands-on approach to understanding how these methods work and their applications in solving real-world problems.",
+  "difficulty": "Beginner",
+  "time": "30",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "step6.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
