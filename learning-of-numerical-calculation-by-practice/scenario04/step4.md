@@ -49,9 +49,5 @@ int main() {
 ```{{copy}}
 
 ```
-<<<<<<< HEAD
 gcc -Wall -o program ./romberg01.c -lm
-=======
-gcc -Wall -o program ./romberg.c -lm
->>>>>>> main
 ```{{execute}}
