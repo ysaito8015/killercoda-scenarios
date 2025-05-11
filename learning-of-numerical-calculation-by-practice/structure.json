@@ -4,6 +4,7 @@
 	"items" : [
 		{ "path" : "scenario01" },
 		{ "path" : "scenario02" },
-		{ "path" : "scenario03" }
+		{ "path" : "scenario03" },
+		{ "path" : "scenario04" }
 	]
 }
