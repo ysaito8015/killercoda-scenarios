@@ -1,4 +1,4 @@
-## 最小2乗法
+## Romberg 積分法
 
 ```
 #include <stdio.h>
@@ -49,5 +49,9 @@ int main() {
 ```{{copy}}
 
 ```
+<<<<<<< HEAD
 gcc -Wall -o program ./romberg01.c -lm
+=======
+gcc -Wall -o program ./romberg.c -lm
+>>>>>>> main
 ```{{execute}}

@@ -1,6 +1,6 @@
 {
-  "title": "Chapter 04: Numerical Integration",
-  "description": "This chapter covers the basics of numerical integration, including the trapezoidal rule and Simpson's rule. It provides a hands-on approach to understanding how these methods work and their applications in solving real-world problems.",
+  "title": "演習で学ぶ数値計算04",
+  "description": "数値積分法",
   "difficulty": "Beginner",
   "time": "30",
   "details": {

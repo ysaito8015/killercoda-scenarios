@@ -1,4 +1,4 @@
-## スプライン補完
+## Simpson 則
 
 ```
 #include <stdio.h>

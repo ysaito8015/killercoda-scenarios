@@ -1,4 +1,4 @@
-## Lagrange 補間
+## 台形則
 
 ```
 #include <stdio.h>
