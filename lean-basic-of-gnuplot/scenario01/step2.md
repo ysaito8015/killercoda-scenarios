@@ -24,15 +24,15 @@ gnuplotを再起動してデータをプロットします：
 
 まず、PNG出力を設定します：
 
-`set terminal png size 800,600 font "Arial,14"`{{execute}}
+`set terminal png size 800,600`{{execute}}
 
-`set output '/var/www/html/plots/marathon_full.png'`{{execute}}
+`set output 'plots/marathon_full.png'`{{execute}}
 
 `plot "data/marathon.dat" using 1:2 with boxes title "完走者数"`{{execute}}
 
 `unset output`{{execute}}
 
-[マラソンデータの全体像を表示]({{TRAFFIC_HOST1_80}}/plots/marathon_full.png)
+[マラソンデータの全体像を表示]({{TRAFFIC_HOST1_8080}}/marathon_full.png)
 
 ## データの分析
 
@@ -58,7 +58,7 @@ gnuplotを再起動してデータをプロットします：
 
 範囲を限定して、早い時間帯を詳しく見てみましょう：
 
-`set output '/var/www/html/plots/marathon_zoom.png'`{{execute}}
+`set output 'plots/marathon_zoom.png'`{{execute}}
 
 `set xlabel "完走時間 [分]"`{{execute}}
 
@@ -70,7 +70,7 @@ gnuplotを再起動してデータをプロットします：
 
 `unset output`{{execute}}
 
-[早い時間帯の詳細を表示]({{TRAFFIC_HOST1_80}}/plots/marathon_zoom.png)
+[早い時間帯の詳細を表示]({{TRAFFIC_HOST1_8080}}/marathon_zoom.png)
 
 ## ASCIIでの簡易確認
 
@@ -84,7 +84,7 @@ gnuplotを再起動してデータをプロットします：
 
 元の設定に戻します：
 
-`set terminal png size 800,600 font "Arial,14"`{{execute}}
+`set terminal png size 800,600`{{execute}}
 
 ## 発見のまとめ
 

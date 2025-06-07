@@ -7,17 +7,15 @@ cd /root/work
 
 # 必要なパッケージのインストール
 apt-get update
-apt-get install -y gnuplot apache2
+apt-get install -y gnuplot python3
 
-# Webサーバーの設定
-systemctl start apache2
-mkdir -p /var/www/html/plots
-chmod 755 /var/www/html/plots
+# 作業ディレクトリにplotsディレクトリを作成
+mkdir -p /root/work/plots
 
 # gnuplotのデフォルト設定（PNG出力）
 cat > /root/.gnuplot << 'EOF'
 # デフォルトでPNG出力を使用
-set terminal png size 800,600 font "Arial,14"
+set terminal png size 800,600
 EOF
 
 # サンプルデータの準備
@@ -132,5 +130,7 @@ EOF
 echo "環境のセットアップが完了しました。"
 echo "作業ディレクトリ: /root/work"
 echo "データディレクトリ: /root/work/data"
-echo "Webサーバー: http://localhost/"
-echo "グラフ出力先: /var/www/html/plots/"
+echo "グラフ出力先: /root/work/plots/"
+echo ""
+echo "グラフを表示する際は、Python Webサーバーを使用します："
+echo "cd /root/work/plots && python3 -m http.server 8080"

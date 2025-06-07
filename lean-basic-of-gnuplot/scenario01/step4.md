@@ -8,7 +8,7 @@
 
 `reset`{{execute}}
 
-`set terminal png size 800,600 font "Arial,14"`{{execute}}
+`set terminal png size 800,600`{{execute}}
 
 軸ラベルとタイトルを追加：
 
@@ -18,13 +18,13 @@
 
 `set title "マラソン大会の完走時間分布"`{{execute}}
 
-`set output '/var/www/html/plots/marathon_labeled.png'`{{execute}}
+`set output 'plots/marathon_labeled.png'`{{execute}}
 
 `plot "data/marathon.dat" using 1:2 with boxes title "2023年大会"`{{execute}}
 
 `unset output`{{execute}}
 
-[ラベル付きグラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_labeled.png)
+[ラベル付きグラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_labeled.png)
 
 ## グリッドの追加
 
@@ -32,19 +32,19 @@
 
 `set grid`{{execute}}
 
-`set output '/var/www/html/plots/marathon_grid.png'`{{execute}}
+`set output 'plots/marathon_grid.png'`{{execute}}
 
 `plot "data/marathon.dat" using 1:2 with boxes title "2023年大会"`{{execute}}
 
 `unset output`{{execute}}
 
-[グリッド付きグラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_grid.png)
+[グリッド付きグラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_grid.png)
 
 ## 色とスタイルのカスタマイズ
 
 ボックスの色と幅を調整：
 
-`set output '/var/www/html/plots/marathon_styled.png'`{{execute}}
+`set output 'plots/marathon_styled.png'`{{execute}}
 
 `set boxwidth 0.9 relative`{{execute}}
 
@@ -54,13 +54,13 @@
 
 `unset output`{{execute}}
 
-[スタイル設定したグラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_styled.png)
+[スタイル設定したグラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_styled.png)
 
 ## 複数のデータセットの比較
 
 仮想的な前年のデータと比較するプロットを作成：
 
-`set output '/var/www/html/plots/marathon_compare.png'`{{execute}}
+`set output 'plots/marathon_compare.png'`{{execute}}
 
 `set style data boxes`{{execute}}
 
@@ -71,7 +71,7 @@
 
 `unset output`{{execute}}
 
-[比較グラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_compare.png)
+[比較グラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_compare.png)
 
 ## DLAクラスターの可視化（ボーナス）
 
@@ -79,9 +79,9 @@
 
 `reset`{{execute}}
 
-`set terminal png size 600,600 font "Arial,14"`{{execute}}
+`set terminal png size 600,600`{{execute}}
 
-`set output '/var/www/html/plots/cluster.png'`{{execute}}
+`set output 'plots/cluster.png'`{{execute}}
 
 `unset border`{{execute}}
 
@@ -97,7 +97,7 @@
 
 `unset output`{{execute}}
 
-[DLAクラスターを表示]({{TRAFFIC_HOST1_80}}/plots/cluster.png)
+[DLAクラスターを表示]({{TRAFFIC_HOST1_8080}}/cluster.png)
 
 これは科学計算でよく使われる、装飾を最小限にしたプロットスタイルです。
 
@@ -107,19 +107,19 @@
 
 `reset`{{execute}}
 
-`set terminal png size 1000,700 font "Arial,16"`{{execute}}
+`set terminal png size 1000,700`{{execute}}
 
-`set output '/var/www/html/plots/publication_quality.png'`{{execute}}
+`set output 'plots/publication_quality.png'`{{execute}}
 
-`set title "マラソン大会完走時間分布の分析" font "Arial,20"`{{execute}}
+`set title "マラソン大会完走時間分布の分析"`{{execute}}
 
-`set xlabel "完走時間 [分]" font "Arial,16"`{{execute}}
+`set xlabel "完走時間 [分]"`{{execute}}
 
-`set ylabel "ランナー数 [人]" font "Arial,16"`{{execute}}
+`set ylabel "ランナー数 [人]"`{{execute}}
 
 `set grid`{{execute}}
 
-`set key top right font "Arial,14"`{{execute}}
+`set key top right`{{execute}}
 
 `set style data boxes`{{execute}}
 
@@ -131,7 +131,7 @@
 
 `unset output`{{execute}}
 
-[出版品質のグラフを表示]({{TRAFFIC_HOST1_80}}/plots/publication_quality.png)
+[出版品質のグラフを表示]({{TRAFFIC_HOST1_8080}}/publication_quality.png)
 
 ## まとめ
 
