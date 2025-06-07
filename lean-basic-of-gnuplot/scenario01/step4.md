@@ -24,7 +24,7 @@
 
 `unset output`{{execute}}
 
-[ラベル付きグラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_labeled.png)
+[ラベル付きグラフを表示]({{TRAFFIC_HOST1_8080}}/plots/marathon_labeled.png)
 
 ## グリッドの追加
 
@@ -38,7 +38,7 @@
 
 `unset output`{{execute}}
 
-[グリッド付きグラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_grid.png)
+[グリッド付きグラフを表示]({{TRAFFIC_HOST1_8080}}/plots/marathon_grid.png)
 
 ## 色とスタイルのカスタマイズ
 
@@ -54,7 +54,7 @@
 
 `unset output`{{execute}}
 
-[スタイル設定したグラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_styled.png)
+[スタイル設定したグラフを表示]({{TRAFFIC_HOST1_8080}}/plots/marathon_styled.png)
 
 ## 複数のデータセットの比較
 
@@ -71,7 +71,7 @@
 
 `unset output`{{execute}}
 
-[比較グラフを表示]({{TRAFFIC_HOST1_8080}}/marathon_compare.png)
+[比較グラフを表示]({{TRAFFIC_HOST1_8080}}/plots/marathon_compare.png)
 
 ## DLAクラスターの可視化（ボーナス）
 
@@ -97,7 +97,7 @@
 
 `unset output`{{execute}}
 
-[DLAクラスターを表示]({{TRAFFIC_HOST1_8080}}/cluster.png)
+[DLAクラスターを表示]({{TRAFFIC_HOST1_8080}}/plots/cluster.png)
 
 これは科学計算でよく使われる、装飾を最小限にしたプロットスタイルです。
 
@@ -131,7 +131,7 @@
 
 `unset output`{{execute}}
 
-[出版品質のグラフを表示]({{TRAFFIC_HOST1_8080}}/publication_quality.png)
+[出版品質のグラフを表示]({{TRAFFIC_HOST1_8080}}/plots/publication_quality.png)
 
 ## まとめ
 

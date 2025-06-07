@@ -32,7 +32,7 @@ gnuplotを再起動してデータをプロットします：
 
 `unset output`{{execute}}
 
-[マラソンデータの全体像を表示]({{TRAFFIC_HOST1_8080}}/marathon_full.png)
+[マラソンデータの全体像を表示]({{TRAFFIC_HOST1_8080}}/plots/marathon_full.png)
 
 ## データの分析
 
@@ -70,7 +70,7 @@ gnuplotを再起動してデータをプロットします：
 
 `unset output`{{execute}}
 
-[早い時間帯の詳細を表示]({{TRAFFIC_HOST1_8080}}/marathon_zoom.png)
+[早い時間帯の詳細を表示]({{TRAFFIC_HOST1_8080}}/plots/marathon_zoom.png)
 
 ## ASCIIでの簡易確認
 

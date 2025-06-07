@@ -22,7 +22,7 @@
 
 `unset output`{{execute}}
 
-[実行時間データ（線形スケール）]({{TRAFFIC_HOST1_8080}}/runtime_linear.png)
+[実行時間データ（線形スケール）]({{TRAFFIC_HOST1_8080}}/plots/runtime_linear.png)
 
 このグラフでは、クラスターサイズが大きくなるにつれて実行時間が急激に増加していることがわかります。
 
@@ -44,7 +44,7 @@
 
 `unset output`{{execute}}
 
-[実行時間データ（両対数スケール）]({{TRAFFIC_HOST1_8080}}/runtime_loglog.png)
+[実行時間データ（両対数スケール）]({{TRAFFIC_HOST1_8080}}/plots/runtime_loglog.png)
 
 両対数プロットで直線になることから、実行時間がべき乗則に従うことがわかります。
 
@@ -61,7 +61,7 @@
 
 `unset output`{{execute}}
 
-[データとモデルの比較]({{TRAFFIC_HOST1_8080}}/runtime_model.png)
+[データとモデルの比較]({{TRAFFIC_HOST1_8080}}/plots/runtime_model.png)
 
 モデルがデータとよく一致していることがわかります。
 
@@ -81,7 +81,7 @@
 
 `unset output`{{execute}}
 
-[実行時間の予測]({{TRAFFIC_HOST1_8080}}/runtime_prediction.png)
+[実行時間の予測]({{TRAFFIC_HOST1_8080}}/plots/runtime_prediction.png)
 
 N=100,000では約100,000秒（約28時間）かかることが予測されます。
 
