@@ -20,29 +20,49 @@ PNG形式で出力するように設定されています。
 
 ## 基本的なプロット（画像出力）
 
+まず、出力ディレクトリを作成します：
+
+`mkdir -p plots`{{execute}}
+
 簡単な数学関数をプロットして、Webで表示してみましょう：
 
-`set output '/var/www/html/plots/sin_plot.png'`{{execute}}
+`set terminal png size 800,600`{{execute}}
+
+`set output 'plots/sin_plot.png'`{{execute}}
 
 `plot sin(x)`{{execute}}
 
 `unset output`{{execute}}
 
-グラフが生成されました！以下のリンクで表示できます：
+グラフが生成されました！gnuplotを終了してファイルを確認しましょう：
 
-[正弦波のグラフを表示]({{TRAFFIC_HOST1_80}}/plots/sin_plot.png)
+`quit`{{execute}}
+
+`ls -la plots/`{{execute}}
+
+画像を表示するために、簡易Webサーバーを起動します：
+
+`cd plots && python3 -m http.server 8080 &`{{execute}}
+
+`cd ..`{{execute}}
+
+[正弦波のグラフを表示]({{TRAFFIC_HOST1_8080}}/sin_plot.png)
 
 ## 複数の関数をプロット
 
-複数の関数を同時に表示してみましょう：
+gnuplotを再起動して、複数の関数を同時に表示してみましょう：
 
-`set output '/var/www/html/plots/sin_cos_plot.png'`{{execute}}
+`gnuplot`{{execute}}
+
+`set terminal png size 800,600`{{execute}}
+
+`set output 'plots/sin_cos_plot.png'`{{execute}}
 
 `plot sin(x) title "sin(x)", cos(x) title "cos(x)"`{{execute}}
 
 `unset output`{{execute}}
 
-[正弦波と余弦波のグラフを表示]({{TRAFFIC_HOST1_80}}/plots/sin_cos_plot.png)
+[正弦波と余弦波のグラフを表示]({{TRAFFIC_HOST1_8080}}/sin_cos_plot.png)
 
 ## ターミナルでの簡易表示（ASCII）
 
@@ -56,31 +76,31 @@ ASCIIアートでグラフが表示されます！
 
 元の設定に戻します：
 
-`set terminal png size 800,600 font "Arial,14"`{{execute}}
+`set terminal png size 800,600`{{execute}}
 
 ## プロットのスタイル変更
 
 線のスタイルを変更してみましょう：
 
-`set output '/var/www/html/plots/style_plot.png'`{{execute}}
+`set output 'plots/style_plot.png'`{{execute}}
 
 `plot sin(x) with lines title "線", cos(x) with points title "点"`{{execute}}
 
 `unset output`{{execute}}
 
-[スタイルの異なるグラフを表示]({{TRAFFIC_HOST1_80}}/plots/style_plot.png)
+[スタイルの異なるグラフを表示]({{TRAFFIC_HOST1_8080}}/style_plot.png)
 
 ## 範囲の指定
 
 x軸の範囲を指定してプロットできます：
 
-`set output '/var/www/html/plots/range_plot.png'`{{execute}}
+`set output 'plots/range_plot.png'`{{execute}}
 
 `plot [-2*pi:2*pi] sin(x) with lines`{{execute}}
 
 `unset output`{{execute}}
 
-[範囲指定したグラフを表示]({{TRAFFIC_HOST1_80}}/plots/range_plot.png)
+[範囲指定したグラフを表示]({{TRAFFIC_HOST1_8080}}/range_plot.png)
 
 ## gnuplotの基本コマンド
 

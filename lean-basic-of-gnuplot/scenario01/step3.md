@@ -8,9 +8,9 @@
 
 `reset`{{execute}}
 
-`set terminal png size 800,600 font "Arial,14"`{{execute}}
+`set terminal png size 800,600`{{execute}}
 
-`set output '/var/www/html/plots/runtime_linear.png'`{{execute}}
+`set output 'plots/runtime_linear.png'`{{execute}}
 
 `set xlabel "クラスターサイズ"`{{execute}}
 
@@ -22,7 +22,7 @@
 
 `unset output`{{execute}}
 
-[実行時間データ（線形スケール）]({{TRAFFIC_HOST1_80}}/plots/runtime_linear.png)
+[実行時間データ（線形スケール）]({{TRAFFIC_HOST1_8080}}/runtime_linear.png)
 
 このグラフでは、クラスターサイズが大きくなるにつれて実行時間が急激に増加していることがわかります。
 
@@ -30,7 +30,7 @@
 
 このような場合、両対数プロットが有効です：
 
-`set output '/var/www/html/plots/runtime_loglog.png'`{{execute}}
+`set output 'plots/runtime_loglog.png'`{{execute}}
 
 `set logscale`{{execute}}
 
@@ -44,7 +44,7 @@
 
 `unset output`{{execute}}
 
-[実行時間データ（両対数スケール）]({{TRAFFIC_HOST1_80}}/plots/runtime_loglog.png)
+[実行時間データ（両対数スケール）]({{TRAFFIC_HOST1_8080}}/runtime_loglog.png)
 
 両対数プロットで直線になることから、実行時間がべき乗則に従うことがわかります。
 
@@ -52,7 +52,7 @@
 
 データがべき乗則 T ~ N^k に従うと仮定して、モデルと比較してみましょう：
 
-`set output '/var/www/html/plots/runtime_model.png'`{{execute}}
+`set output 'plots/runtime_model.png'`{{execute}}
 
 `set title "実行時間：データとモデルの比較"`{{execute}}
 
@@ -61,7 +61,7 @@
 
 `unset output`{{execute}}
 
-[データとモデルの比較]({{TRAFFIC_HOST1_80}}/plots/runtime_model.png)
+[データとモデルの比較]({{TRAFFIC_HOST1_8080}}/runtime_model.png)
 
 モデルがデータとよく一致していることがわかります。
 
@@ -69,7 +69,7 @@
 
 このモデルを使って、より大きなクラスターサイズでの実行時間を予測できます：
 
-`set output '/var/www/html/plots/runtime_prediction.png'`{{execute}}
+`set output 'plots/runtime_prediction.png'`{{execute}}
 
 `set title "実行時間の予測"`{{execute}}
 
@@ -81,7 +81,7 @@
 
 `unset output`{{execute}}
 
-[実行時間の予測]({{TRAFFIC_HOST1_80}}/plots/runtime_prediction.png)
+[実行時間の予測]({{TRAFFIC_HOST1_8080}}/runtime_prediction.png)
 
 N=100,000では約100,000秒（約28時間）かかることが予測されます。
 
@@ -101,7 +101,7 @@ N=100,000では約100,000秒（約28時間）かかることが予測されま�
 
 元の設定に戻します：
 
-`set terminal png size 800,600 font "Arial,14"`{{execute}}
+`set terminal png size 800,600`{{execute}}
 
 `unset logscale`{{execute}}
 
