@@ -5,9 +5,20 @@ set -euxo pipefail
 mkdir -p /root/work/data
 cd /root/work
 
-# gnuplotのインストール
+# 必要なパッケージのインストール
 apt-get update
-apt-get install -y gnuplot gnuplot-qt
+apt-get install -y gnuplot apache2
+
+# Webサーバーの設定
+systemctl start apache2
+mkdir -p /var/www/html/plots
+chmod 755 /var/www/html/plots
+
+# gnuplotのデフォルト設定（PNG出力）
+cat > /root/.gnuplot << 'EOF'
+# デフォルトでPNG出力を使用
+set terminal png size 800,600 font "Arial,14"
+EOF
 
 # サンプルデータの準備
 cat > /root/work/data/marathon.dat << 'EOF'
@@ -121,3 +132,5 @@ EOF
 echo "環境のセットアップが完了しました。"
 echo "作業ディレクトリ: /root/work"
 echo "データディレクトリ: /root/work/data"
+echo "Webサーバー: http://localhost/"
+echo "グラフ出力先: /var/www/html/plots/"
