@@ -1,0 +1,7 @@
+{
+  "title": "Gnuplotの基礎 - Gnuplot in Actionで学ぶデータ可視化",
+  "description": "gnuplotを使用したデータ可視化とグラフィカル分析の実践的な学習",
+  "items": [
+    { "path": "scenario01" }
+  ]
+}
