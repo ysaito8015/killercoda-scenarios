@@ -8,7 +8,9 @@
 
 `reset`{{execute}}
 
-軸ラベルを追加：
+`set terminal png size 800,600 font "Arial,14"`{{execute}}
+
+軸ラベルとタイトルを追加：
 
 `set xlabel "完走時間 [分]"`{{execute}}
 
@@ -16,7 +18,13 @@
 
 `set title "マラソン大会の完走時間分布"`{{execute}}
 
+`set output '/var/www/html/plots/marathon_labeled.png'`{{execute}}
+
 `plot "data/marathon.dat" using 1:2 with boxes title "2023年大会"`{{execute}}
+
+`unset output`{{execute}}
+
+[ラベル付きグラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_labeled.png)
 
 ## グリッドの追加
 
@@ -24,24 +32,46 @@
 
 `set grid`{{execute}}
 
-`replot`{{execute}}
+`set output '/var/www/html/plots/marathon_grid.png'`{{execute}}
+
+`plot "data/marathon.dat" using 1:2 with boxes title "2023年大会"`{{execute}}
+
+`unset output`{{execute}}
+
+[グリッド付きグラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_grid.png)
 
 ## 色とスタイルのカスタマイズ
 
-ボックスの色を変更：
+ボックスの色と幅を調整：
 
-`plot "data/marathon.dat" using 1:2 with boxes lc rgb "blue" title "2023年大会"`{{execute}}
+`set output '/var/www/html/plots/marathon_styled.png'`{{execute}}
 
-線幅を太くする：
+`set boxwidth 0.9 relative`{{execute}}
 
-`plot "data/marathon.dat" using 1:2 with boxes lw 2 lc rgb "dark-green" title "2023年大会"`{{execute}}
+`set style fill solid 0.8`{{execute}}
+
+`plot "data/marathon.dat" using 1:2 with boxes lc rgb "dark-green" title "2023年大会"`{{execute}}
+
+`unset output`{{execute}}
+
+[スタイル設定したグラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_styled.png)
 
 ## 複数のデータセットの比較
 
 仮想的な前年のデータと比較するプロットを作成：
 
-`plot "data/marathon.dat" using 1:2 with boxes lc rgb "blue" title "2023年", \
-"data/marathon.dat" using 1:($2*0.9) with boxes lc rgb "red" title "2022年（仮想）"`{{execute}}
+`set output '/var/www/html/plots/marathon_compare.png'`{{execute}}
+
+`set style data boxes`{{execute}}
+
+`set style fill solid 0.5`{{execute}}
+
+`plot "data/marathon.dat" using 1:2 lc rgb "blue" title "2023年", \
+"data/marathon.dat" using 1:($2*0.9) lc rgb "red" title "2022年（仮想）"`{{execute}}
+
+`unset output`{{execute}}
+
+[比較グラフを表示]({{TRAFFIC_HOST1_80}}/plots/marathon_compare.png)
 
 ## DLAクラスターの可視化（ボーナス）
 
@@ -49,24 +79,66 @@
 
 `reset`{{execute}}
 
+`set terminal png size 600,600 font "Arial,14"`{{execute}}
+
+`set output '/var/www/html/plots/cluster.png'`{{execute}}
+
 `unset border`{{execute}}
 
 `unset xtics`{{execute}}
 
 `unset ytics`{{execute}}
 
+`unset key`{{execute}}
+
 `set size square`{{execute}}
 
-`plot "data/cluster_sample.dat" using 1:2 with points pt 7 ps 2`{{execute}}
+`plot "data/cluster_sample.dat" using 1:2 with points pt 7 ps 2 lc rgb "black"`{{execute}}
+
+`unset output`{{execute}}
+
+[DLAクラスターを表示]({{TRAFFIC_HOST1_80}}/plots/cluster.png)
 
 これは科学計算でよく使われる、装飾を最小限にしたプロットスタイルです。
+
+## 高品質な出力例
+
+最後に、出版品質のグラフを作成してみましょう：
+
+`reset`{{execute}}
+
+`set terminal png size 1000,700 font "Arial,16"`{{execute}}
+
+`set output '/var/www/html/plots/publication_quality.png'`{{execute}}
+
+`set title "マラソン大会完走時間分布の分析" font "Arial,20"`{{execute}}
+
+`set xlabel "完走時間 [分]" font "Arial,16"`{{execute}}
+
+`set ylabel "ランナー数 [人]" font "Arial,16"`{{execute}}
+
+`set grid`{{execute}}
+
+`set key top right font "Arial,14"`{{execute}}
+
+`set style data boxes`{{execute}}
+
+`set style fill solid 0.7`{{execute}}
+
+`set boxwidth 0.8 relative`{{execute}}
+
+`plot [120:450] "data/marathon.dat" using 1:2 lc rgb "#1f77b4" title "実測データ"`{{execute}}
+
+`unset output`{{execute}}
+
+[出版品質のグラフを表示]({{TRAFFIC_HOST1_80}}/plots/publication_quality.png)
 
 ## まとめ
 
 gnuplotでは：
 - `set` コマンドでグラフの外観をカスタマイズ
 - 軸ラベル、タイトル、凡例で文脈を提供
-- 色、線幅、点の形状で視覚的な差別化
+- 色、線幅、塗りつぶしで視覚的な差別化
 - 目的に応じて装飾の量を調整
 
 これらの機能を使いこなすことで、**データの洞察を効果的に伝える**グラフを作成できます。
