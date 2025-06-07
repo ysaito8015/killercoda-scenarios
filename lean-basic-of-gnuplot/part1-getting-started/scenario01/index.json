@@ -1,0 +1,36 @@
+{
+  "title": "シナリオ01: gnuplotでデータを理解する",
+  "description": "gnuplotを使ったグラフィカル分析の基本を学びます。実データを使って、視覚的にデータから洞察を得る方法を体験します。",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "gnuplotの起動と基本操作",
+        "text": "step1.md"
+      },
+      {
+        "title": "データの可視化 - マラソンデータの分析",
+        "text": "step2.md"
+      },
+      {
+        "title": "データの探索 - 実行時間の予測",
+        "text": "step3.md"
+      },
+      {
+        "title": "グラフの装飾とカスタマイズ",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
