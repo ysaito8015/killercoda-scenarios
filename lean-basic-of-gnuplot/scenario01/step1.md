@@ -64,7 +64,7 @@ gnuplotを一旦終了します：
 
 Webブラウザでグラフを表示できます：
 
-[正弦波のグラフを表示]({{TRAFFIC_HOST1_8080}}/sin_plot.png)
+[正弦波のグラフを表示]({{TRAFFIC_HOST1_8080}}/plots/sin_plot.png)
 
 ---
 
@@ -134,10 +134,10 @@ gnuplotを終了します：
 
 以下のリンクから各グラフを表示できます：
 
-- [正弦波のグラフ]({{TRAFFIC_HOST1_8080}}/sin_plot.png)
-- [正弦波と余弦波]({{TRAFFIC_HOST1_8080}}/sin_cos_plot.png)
-- [スタイルの異なるグラフ]({{TRAFFIC_HOST1_8080}}/style_plot.png)
-- [範囲指定したグラフ]({{TRAFFIC_HOST1_8080}}/range_plot.png)
+- [正弦波のグラフ]({{TRAFFIC_HOST1_8080}}/plots/sin_plot.png)
+- [正弦波と余弦波]({{TRAFFIC_HOST1_8080}}/plots/sin_cos_plot.png)
+- [スタイルの異なるグラフ]({{TRAFFIC_HOST1_8080}}/plots/style_plot.png)
+- [範囲指定したグラフ]({{TRAFFIC_HOST1_8080}}/plots/range_plot.png)
 
 ---
 
